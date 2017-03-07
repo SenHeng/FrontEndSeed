@@ -1,0 +1,27 @@
+@import "../../node_modules/normalize.css/normalize";
+html {
+  font-size: 10px;
+}
+
+body {
+  font: 1.65rem/1.5 sans-serif;
+  margin: 1em auto;
+  max-width: 50em;
+}
+
+h1, h2 {
+  line-height:1.5;
+}
+
+code {
+  background-color: rgba(27,31,35,0.05);
+  border-radius: 0.5rem;
+  display: inline-block;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 85%;
+  padding: 0.5rem 1rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}

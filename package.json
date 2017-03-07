@@ -8,7 +8,19 @@
   "license": "MIT",
   "scripts": {
     "test": "echo test!",
-    "start": "gulp dev"
+    "clean": "rm -rf dist",
+    "open": "open http://localhost:8080",
+
+    "start": "gulp dev",
+    "prestart": "yarn run clean",
+    "poststart": "yarn run open",
+
+    "build": "gulp build",
+    "prebuild": "yarn run clean",
+    "testbuild": "cd dist && http-server & yarn run open"
+  },
+  "dependencies": {
+    "normalize.css": "^5.0.0"
   },
   "devDependencies": {
     "del": "^2.2.2",
@@ -22,8 +34,5 @@
     "gulp-sourcemaps": "^2.4.0",
     "gulp-util": "^3.0.8",
     "http-server": "^0.9.0"
-  },
-  "dependencies": {
-    "normalize.css": "^5.0.0"
   }
 }
