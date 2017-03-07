@@ -1,4 +1,6 @@
 # Front End Seed
+![travis][travis-src]
+
 
 This project is a skeleton for doing html and css development. You can use it to quickly bootstrap web design projects and also the dev environment for these projects.
 
@@ -37,3 +39,4 @@ When development is complete, using the below command will preprocess the css an
 
 
 [gulp-src]: http://gulpjs.com/
+[travis-src]: https://travis-ci.org/SenHeng/FrontEndSeed.svg?branch=master

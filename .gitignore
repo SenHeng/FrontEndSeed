@@ -38,3 +38,6 @@ jspm_packages
 
 # Build directory
 dist
+
+# Deploy key for travis-ci
+deploy-key
