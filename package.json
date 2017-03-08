@@ -3,13 +3,15 @@
   "version": "1.0.0",
   "description": "Quickly create a dev setup for HTML and CSS (SCSS/LESS) coding. Edit",
   "main": "index.js",
-  "repository": "git@github.com:SenHeng/FrontEndStarter.git",
+  "repository": "https://github.com/SenHeng/FrontEndSeed.git",
   "author": "Sen Heng <sen@legendofcode.com>",
   "license": "MIT",
   "scripts": {
     "test": "echo test!",
-    "clean": "rm -rf dist",
+    "clean": "rm -rf dist/*",
     "open": "open http://localhost:8080",
+    "makeDist": "git clone git@github.com:SenHeng/FrontEndSeed.git -b gh-pages dist",
+    "deploy": "cd dist && git add . && git commit -m \"gh deploy\" && git push",
 
     "start": "gulp dev",
     "prestart": "yarn run clean",

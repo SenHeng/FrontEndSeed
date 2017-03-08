@@ -31,12 +31,21 @@ This project uses [gulp.js][gulp-src] to set up a local dev server and monitor f
 
 1. `npm start` or `yarn start`
 
-## Deployment
+## Build
 
 When development is complete, using the below command will preprocess the css and html into the `dist` folder.
 
 1. `npm run build` or `yarn run build`
 
+## Deploying to GitHub Pages
+
+1. `yarn run makeDist`
+1. `yarn run build`
+1. release
+
+cd dist
+git add .
+git commit -m "test: gh deploy"
 
 [gulp-src]: http://gulpjs.com/
 [travis-src]: https://travis-ci.org/SenHeng/FrontEndSeed.svg?branch=master

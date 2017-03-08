@@ -1,7 +1,6 @@
 sudo: false
 before_install:
 - curl -o- -L https://yarnpkg.com/install.sh | bash
-- export PATH=$HOME/.yarn/bin:$PATH
 cache:
   yarn: true
   directories:
@@ -9,8 +8,8 @@ cache:
 language: node_js
 node_js:
 - '6'
-# script: bash ./deploy.sh
-script: yarn run build
+script: bash ./script/testGit.sh
+# script: yarn run build
 env:
   global:
   - ENCRYPTION_LABEL: 3b42b9cd1698
@@ -19,11 +18,11 @@ notifications:
   email: never
   slack:
     secure: iiUPGh4RCX962DpcHfBqsVxlkUqgvTIOkFKFF/cfklWJBmoD5YhgFWwUxWVEGQlTijqsnehIIAnz9o83eDp2nWmPC4IXmGoYMZuX1z19G1pbhGQQGML+n5mAnUd27mR16VgrJefzObKedoFb4p3W6KETzNcmL3hL6WT2sbt6kOiXnwfYtXOpQVbpQTemKqP/D9+ifHiJAtVIhHt2sjrqAZiI8EBgPPhxCz21uvmsQNrMSbD9n5PRFOGRNv5f81lf2comsRIaLEprBGnHWTBERXnhhTDAOLCyJ9LfwenO0mr/CKtw9Ey1gFIBAGkJcz9SzR1HFJilaGdxvSYHVgSxWg84q8+mKLp+YLZujnvUE8SW9Wo8bmpdyh9uu4WADdjiHAQ1NJ1Ur1pyaQEsb7dfATZrK47i/fQxCKcRHErunO6H4Ac0KTIqnslJHPzWXoSiwcNSmXSFKQYupST8Zj6q7LJwsIJgq+M1KqXfRguLKML+xj2yofC+pMmk/UPFbdhud7HR9kqXRqZwcAiS5CMwY8iVjzK3ywuc8M/mUWGqoxDuScAh7BHQY9/UNQwiv2DKni8IaTiZEtPClt4On3JiSyoQSbYviqHgXPP5JIzGZNGEm9GN9gMO1QLP7t2b+ED35A6Yua2hSjkE2UR0c+1JkcWhz/KDdlD5IHXwgrt+cTU=
-deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN
-  local_dir: dist
-  target_branch: gh-pages
-  on:
-    branch: master
+# deploy:
+#   provider: pages
+#   skip_cleanup: true
+#   github_token: $GITHUB_TOKEN
+#   local_dir: dist
+#   target_branch: gh-pages
+#   on:
+#     branch: master
