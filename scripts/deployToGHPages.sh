@@ -20,10 +20,15 @@ yarn run setupGhPages
 yarn run build
 cd dist
 
+# Exit if the built output is unchanged
+if [ -z `git diff --exit-code` ]; then
+  echo "No changes to build, exiting."
+  exit 0
+fi
+
 # Commit contents in dist folder to gh-pages
 git config user.name "Travis CI"
 git config user.email "sen@legendofcode.com"
-
 git add .
 git commit -m "Deploy to GitHub Pages: ${SHA}"
 git push "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPO}.git"
