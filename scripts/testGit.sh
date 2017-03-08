@@ -12,4 +12,4 @@ git config user.email "sen@legendofcode.com"
 
 git add .
 git commit -m "test: travis gh deploy"
-git push "https://caee3ef3245b3bcd9e142a07c9a9554411968535@github.com/SenHeng/FrontEndSeed.git"
+git push "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPO}.git"

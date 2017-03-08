@@ -12,8 +12,8 @@ script: bash ./scripts/testGit.sh
 # script: yarn run build
 env:
   global:
-  - ENCRYPTION_LABEL: 3b42b9cd1698
   - COMMIT_AUTHOR_EMAIL: sen@legendofcode.com
+  - GITHUB_REPO: SenHeng/FrontEndSeed
 notifications:
   email: never
   slack:
