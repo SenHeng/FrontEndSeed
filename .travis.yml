@@ -12,7 +12,7 @@ script: bash ./scripts/deployToGHPages.sh
 env:
   global:
   - COMMIT_AUTHOR_EMAIL: sen@legendofcode.com
-  - GITHUB_REPO: SenHeng/FrontEndSeed
+  - GITHUB_REPO: thelegendofcode/FrontEndSeed
   - secure: HxwkadiEOU6XGmLK040/l+QwGm9PLmNrl5GIcf3cBy3RlqFP0gTT+Rw7FhQnJbRs5p2/8vFRd5YWWjmGPq54KmHYX/8Uz9dl64h4P9fez2ksci18ay+C2HLipWArQZ2aZsCOWaDrzv+rjl3HJ7VsWSoXvzaqDFjoDBIzP2eBYUpSTwdPEaDTW1SZiqiyJIdIn/RbfsNYLVva+5c0cnTetCzD8IX1Rw+JLUf80+4u8oja/IH6GdwY5zS4TqLuGA1slMxZ/eU0Xp/0sHvMykzErHDEiwiyR8YUoqpFMeJXHP07exLe7hOEvuamGRuGgjhtMbgW2RK204Pxb2wCqJeqGS5PnmNEVjSktxiAiNxRGclpbEFY2r4OxSt+wtBga7vYbnWqB3OKB3WEeItJUvKeJCuB73F02Rj2LEsflrx1o345XxR4m1KcABsbZoV7NroiXbKJZ2pCOO6VXi+9v+6krodybmjbg3O9fTQ0PHzIKrvHid/ztqJyLdDzRBAICHFW0CmrRUEoxSa1lbyL7DAX2o7ztVOyIIhBXMH1a3AN0M6ZVaQeAPIyvAyvZLKlblJk3EXxI16nzeTTTBCvbtgvwNZf+UTp8uifLcX/AxWs+HVu4dzOVQ1s4bNOzwDra/gX512E6Z8UrjdU9ZMpyM2Ddkbtn78LykhHJd4wq7oVDyM=
 notifications:
   email: never
