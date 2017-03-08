@@ -8,7 +8,7 @@ cache:
 language: node_js
 node_js:
 - '6'
-script: bash ./script/testGit.sh
+script: bash ./scripts/testGit.sh
 # script: yarn run build
 env:
   global:
