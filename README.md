@@ -17,7 +17,7 @@ To start, simply clone and install the required dependencies with either npm or 
 
 To clone without the commit histories:
 
-1. `git clone --depth=1 https://github.com/SenHeng/FrontEndSeed.git`
+1. `git clone --depth=1 https://github.com/thelegendofcode/FrontEndSeed.git`
 
 ## Set up
 
@@ -31,21 +31,19 @@ This project uses [gulp.js][gulp-src] to set up a local dev server and monitor f
 
 1. `npm start` or `yarn start`
 
-## Build
+## Compiling
 
 When development is complete, using the below command will preprocess the css and html into the `dist` folder.
 
 1. `npm run build` or `yarn run build`
 
-## Deploying to GitHub Pages
+## GitHub Pages
 
-1. `yarn run makeDist`
+There are preconfigured Travis-CI tasks in the `scripts` folder for automatic deploys but if for whatever reason you want to do a manual deploy, you can do so using the below steps.
+
+1. `yarn run setupGhPages`
 1. `yarn run build`
-1. release
-
-cd dist
-git add .
-git commit -m "test: gh deploy"
+1. `yarn run deploy`
 
 [gulp-src]: http://gulpjs.com/
 [travis-src]: https://travis-ci.org/SenHeng/FrontEndSeed.svg?branch=master

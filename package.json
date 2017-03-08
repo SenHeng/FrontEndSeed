@@ -10,8 +10,8 @@
     "test": "echo test!",
     "clean": "rm -rf dist/*",
     "open": "open http://localhost:8080",
-    "makeDist": "git clone git@github.com:SenHeng/FrontEndSeed.git -b gh-pages dist",
-    "deploy": "cd dist && git add . && git commit -m \"gh deploy\" && git push",
+    "setupGhPages": "git clone https://github.com/SenHeng/FrontEndSeed.git -b gh-pages dist",
+    "deploy": "cd dist && git add . && git commit -m \"manual gh-pages deploy\" && git push",
 
     "start": "gulp dev",
     "prestart": "yarn run clean",

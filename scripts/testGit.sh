@@ -2,6 +2,7 @@
 set -ev # Exit with nonzero exit code if anything fails
 
 echo "cloning"
+yarn run setupGhPages
 git clone https://github.com/SenHeng/FrontEndSeed.git -b gh-pages dist
 
 echo "build"
