@@ -8,7 +8,7 @@ cache:
 language: node_js
 node_js:
 - '6'
-script: bash ./scripts/testGit.sh
+script: bash ./scripts/deployToGHPages.sh
 env:
   global:
   - COMMIT_AUTHOR_EMAIL: sen@legendofcode.com
