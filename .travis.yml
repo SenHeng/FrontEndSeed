@@ -9,20 +9,7 @@ language: node_js
 node_js:
 - '6'
 script: bash ./scripts/deployToGHPages.sh
-env:
-  global:
-  - COMMIT_AUTHOR_EMAIL: sen@legendofcode.com
-  - GITHUB_REPO: thelegendofcode/FrontEndSeed
-  - secure: HxwkadiEOU6XGmLK040/l+QwGm9PLmNrl5GIcf3cBy3RlqFP0gTT+Rw7FhQnJbRs5p2/8vFRd5YWWjmGPq54KmHYX/8Uz9dl64h4P9fez2ksci18ay+C2HLipWArQZ2aZsCOWaDrzv+rjl3HJ7VsWSoXvzaqDFjoDBIzP2eBYUpSTwdPEaDTW1SZiqiyJIdIn/RbfsNYLVva+5c0cnTetCzD8IX1Rw+JLUf80+4u8oja/IH6GdwY5zS4TqLuGA1slMxZ/eU0Xp/0sHvMykzErHDEiwiyR8YUoqpFMeJXHP07exLe7hOEvuamGRuGgjhtMbgW2RK204Pxb2wCqJeqGS5PnmNEVjSktxiAiNxRGclpbEFY2r4OxSt+wtBga7vYbnWqB3OKB3WEeItJUvKeJCuB73F02Rj2LEsflrx1o345XxR4m1KcABsbZoV7NroiXbKJZ2pCOO6VXi+9v+6krodybmjbg3O9fTQ0PHzIKrvHid/ztqJyLdDzRBAICHFW0CmrRUEoxSa1lbyL7DAX2o7ztVOyIIhBXMH1a3AN0M6ZVaQeAPIyvAyvZLKlblJk3EXxI16nzeTTTBCvbtgvwNZf+UTp8uifLcX/AxWs+HVu4dzOVQ1s4bNOzwDra/gX512E6Z8UrjdU9ZMpyM2Ddkbtn78LykhHJd4wq7oVDyM=
 notifications:
   email: never
   slack:
     secure: iiUPGh4RCX962DpcHfBqsVxlkUqgvTIOkFKFF/cfklWJBmoD5YhgFWwUxWVEGQlTijqsnehIIAnz9o83eDp2nWmPC4IXmGoYMZuX1z19G1pbhGQQGML+n5mAnUd27mR16VgrJefzObKedoFb4p3W6KETzNcmL3hL6WT2sbt6kOiXnwfYtXOpQVbpQTemKqP/D9+ifHiJAtVIhHt2sjrqAZiI8EBgPPhxCz21uvmsQNrMSbD9n5PRFOGRNv5f81lf2comsRIaLEprBGnHWTBERXnhhTDAOLCyJ9LfwenO0mr/CKtw9Ey1gFIBAGkJcz9SzR1HFJilaGdxvSYHVgSxWg84q8+mKLp+YLZujnvUE8SW9Wo8bmpdyh9uu4WADdjiHAQ1NJ1Ur1pyaQEsb7dfATZrK47i/fQxCKcRHErunO6H4Ac0KTIqnslJHPzWXoSiwcNSmXSFKQYupST8Zj6q7LJwsIJgq+M1KqXfRguLKML+xj2yofC+pMmk/UPFbdhud7HR9kqXRqZwcAiS5CMwY8iVjzK3ywuc8M/mUWGqoxDuScAh7BHQY9/UNQwiv2DKni8IaTiZEtPClt4On3JiSyoQSbYviqHgXPP5JIzGZNGEm9GN9gMO1QLP7t2b+ED35A6Yua2hSjkE2UR0c+1JkcWhz/KDdlD5IHXwgrt+cTU=
-# deploy:
-#   provider: pages
-#   skip_cleanup: true
-#   github_token: $GITHUB_TOKEN
-#   local_dir: dist
-#   target_branch: gh-pages
-#   on:
-#     branch: master

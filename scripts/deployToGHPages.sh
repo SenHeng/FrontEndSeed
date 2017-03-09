@@ -14,7 +14,7 @@ SSH_REPO=${REPO/https:\/\/github.com\//git@github.com:}
 SHA=`git rev-parse --verify HEAD`
 
 # Clone the existing gh-pages branch into the dist folder
-yarn run setupGhPages
+git clone https://github.com/$GITHUB_REPO.git -b gh-pages dist
 
 # Run the build script
 yarn run build
@@ -27,8 +27,8 @@ if [ -z `git diff --exit-code` ]; then
 fi
 
 # Commit contents in dist folder to gh-pages
-git config user.name "Travis CI"
-git config user.email "sen@legendofcode.com"
+git config user.name "FourOfSeven via Travis CI"
+git config user.email $GIT_USER_EMAIL
 git add .
 git commit -m "Deploy to GitHub Pages: ${SHA}"
 git push "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPO}.git"
