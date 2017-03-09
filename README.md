@@ -46,4 +46,4 @@ There are preconfigured Travis-CI tasks in the `scripts` folder for automatic de
 1. `yarn run deploy`
 
 [gulp-src]: http://gulpjs.com/
-[travis-src]: https://travis-ci.org/SenHeng/FrontEndSeed.svg?branch=master
+[travis-src]: https://travis-ci.org/thelegendofcode/FrontEndSeed.svg?branch=master
