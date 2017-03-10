@@ -1,5 +1,8 @@
+![travis-src]
+![codeship]
+![circleci]
+
 # Front End Seed
-![travis][travis-src]
 
 
 This project is a skeleton for doing html and css development. You can use it to quickly bootstrap web design projects and also the dev environment for these projects.
@@ -47,3 +50,5 @@ There are preconfigured Travis-CI tasks in the `scripts` folder for automatic de
 
 [gulp-src]: http://gulpjs.com/
 [travis-src]: https://travis-ci.org/thelegendofcode/FrontEndSeed.svg?branch=master
+[codeship]: https://codeship.com/projects/340515d0-e7e3-0134-c58f-1635a52dc88d/status?branch=master
+[circleci]: https://circleci.com/gh/thelegendofcode/FrontEndSeed.svg?style=shield&circle-token=:circle-token
