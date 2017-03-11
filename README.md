@@ -50,5 +50,5 @@ There are preconfigured Travis-CI tasks in the `scripts` folder for automatic de
 
 [gulp-src]: http://gulpjs.com/
 [travis-src]: https://travis-ci.org/thelegendofcode/FrontEndSeed.svg?branch=master
-[codeship]: https://codeship.com/projects/340515d0-e7e3-0134-c58f-1635a52dc88d/status?branch=master
+[codeship]: https://codeship.com/projects/0be6a290-e7e8-0134-482d-6afd4ced9a7c/status?branch=master
 [circleci]: https://circleci.com/gh/thelegendofcode/FrontEndSeed.svg?style=shield&circle-token=:circle-token
