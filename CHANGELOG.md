@@ -6,9 +6,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [1.1.0]
+- Updated normalize.css to v6
+
 ## [1.0.0]
 ### Added
 - Init new project
 - Add gulp, scss and less
 
+[1.1.0]: https://github.com/thelegendofcode/AngularTypescriptWebpack/compare/1.0.0...1.1.0
 [1.0.0]: https://github.com/thelegendofcode/AngularTypescriptWebpack/compare/head...1.0.0

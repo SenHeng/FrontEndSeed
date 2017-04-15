@@ -12,17 +12,15 @@
     "open": "open http://localhost:8080",
     "setupGhPages": "git clone https://github.com/thelegendofcode/FrontEndSeed.git -b gh-pages dist",
     "deploy": "cd dist && git add . && git commit -m \"manual gh-pages deploy\" && git push",
-
     "start": "gulp dev",
     "prestart": "yarn run clean",
     "poststart": "yarn run open",
-
     "build": "gulp build",
     "prebuild": "yarn run clean",
     "testbuild": "cd dist && http-server & yarn run open"
   },
   "dependencies": {
-    "normalize.css": "^5.0.0"
+    "normalize.css": "^6.0.0"
   },
   "devDependencies": {
     "del": "^2.2.2",
