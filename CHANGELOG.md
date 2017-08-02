@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [1.1.1]
+- Updated normalize.css to ^7, del to ^3 and http-server to ^0.10
+
 ## [1.1.0]
 - Updated normalize.css to v6
 
